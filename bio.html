@@ -1,21 +1,24 @@
 <html1>
-    <head> <title>Bio</title></head>
+    <head> 
+        <title>Bio</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
 <body>
+    <div id="wrapper">
         <header>
             <h1>Bio Page</h1>
         </header>
         <nav>
-            <h2><a href="homepage.html">Home</a></h2>
-            <h2><a href="resume.html">Resume</a></h2>
-            <h2><a href="bio.html">Bio</a></h2>
-            <h2><a href="contact.html">Contact</a></h2>
-            <h2><a href="programmingProjects.html">Programming Projects</a></h2>
+            <a href="homepage.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="bio.html">Bio</a>
+            <a href="contact.html">Contact</a>
+            <a href="programmingProjects.html">Programming Projects</a>
         </nav>
         <main>
-            <h3>My name is ChanWoo Chon but you can also call me Peter. I am 28 and I have graduated Toronto Metropolitan University, majoring in Mechanical Engineering. 
-                I am interested in programming in general and I hope to create my own video game one day using what I learn from Humber College.</h3>
-            <hr>
-            <div>
+            <h3 class="bio">My name is ChanWoo Chon but you can also call me Peter. I am 28 and I have graduated Toronto Metropolitan University, majoring in Mechanical Engineering. 
+                I am interested in programming in general and I hope to create my own video game one day using what I learn from Humber College.</h3>    
+            <div class="bio">
                 <h4>My hobby</h4>
                 <ul>
                     <li>Playing Video games</li>
@@ -23,8 +26,8 @@
                     <li>coding(maybe more in the future)</li>
                 </ul>
             </div>
-            <hr>
-            <div>
+            <div class="bio">
+                <div>
                 <h4>Programming language/code that I have encountered till now</h4>
                 <ol>
                     <li>Java</li>
@@ -38,13 +41,17 @@
                     <dd>CSS (In the future)</dd>
                     <dd>Javascript (In the future)</dd>
                 </dl>
+                </div>
+                <div>
+                <img src="image/bio.jpg" alt="bioPic" id="bioPic">
+                </div>
             </div>
         </main>
 
         <footer>
-            <hr>
-            <p>This is Footer</p>
+            <a href="#"><p>Go to Top</p></a>
         </footer>
+    </div>
 
 </body>
 </html1>

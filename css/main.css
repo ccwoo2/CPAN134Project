@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*title of website, This only goes in the header*/
+h1{
+    font-family: Italic, sans-serif;
+    font-size: xxx-large;
+    color: white;
+}
+
+#wrapper{
+    margin: auto;
+    max-width: 1024px;
+}
+/*header, main, aside,footer background designs, paddings and margins*/
+header{
+    background-color: black;
+    background-position: center;
+    text-align: center;
+}
+main{
+    margin: 0 50px 50px 50px;
+    padding: 5px;
+    background-color: #dbe1e7;
+    min-height: 370px;
+    border: 2px solid black;
+}
+
+footer{
+    border: 2px solid black;
+    margin: 0 50px;
+    padding: 10px;
+    background-color: black;
+    clear: both;
+}
+footer a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+/*Boxes for home, resume, lists, and contact page*/
+/*#education, #skills, #experience,main h2,.listcontent*/
+nav{
+    display: grid;
+    margin: 50px 50px 0 50px;
+    font-size: 130%;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto auto auto;
+}
+nav a{
+    padding: 10px 0;
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+main h2:first-child::first-letter{
+    font-size: 300%;
+}
+#home{
+    background-image: url(../image/homepageImage.jpg);
+}
+
+a:hover{
+    color: #bdb06c;
+}
+a:focus{
+    color: #bdb06c;
+}
+main h3{
+    color: blue;
+    margin: 20px;
+}
+h4{
+    margin: 0 20px;
+}
+ul, ol{
+    margin: 0 0 20px 20px;
+    padding: 0;
+}
+.bio{
+    margin: 20px;
+    padding: 0 0 20px 0;
+    color: black;
+    border-bottom: 3px solid black;
+}
+#contact{
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+#contact td, #contact th{
+    padding: 5px 50px;
+
+}
+img{
+    width: 100%;
+    height: 300px;
+}
+#bioPic{
+    width: 90px ;
+    height: 30px;
+}
+fieldset{
+    min-height: 100px;
+    margin: 20px;
+}
+select{
+    width: 200px;
+}
+table{
+    margin: 20px;
+    border-collapse: collapse;
+}
+th, td{
+    margin: 50px;
+    padding: 20px;
+}

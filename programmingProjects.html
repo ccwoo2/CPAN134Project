@@ -1,29 +1,88 @@
 <html1>
-    <head><title>Programming Projects</title></head>
+
+    <head>
+        <title>Programming Projects</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
     <body>
+        <div id="wrapper">
         <header>
             <h1>Programming Projects Page</h1>
         </header>
         <nav>
-            <h2><a href="homepage.html">Home</a></h2>
-            <h2><a href="resume.html">Resume</a></h2>
-            <h2><a href="bio.html">Bio</a></h2>
-            <h2><a href="contact.html">Contact</a></h2>
-            <h2><a href="programmingProjects.html">Programming Projects</a></h2>
+            <a href="homepage.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="bio.html">Bio</a>
+            <a href="contact.html">Contact</a>
+            <a href="programmingProjects.html">Programming Projects</a>
 
         </nav>
         <main>
             <div><h3>This is where programming projects will be displayed</h3></div>
             <form>
-                <fieldset><legend>This is searchbar for programming projects</legend>
+                <fieldset>
+                    <legend>This is searchbar for programming projects</legend>
+                    <br>
                     <label>Search Bar: <input type="text" name ="search" id="search"></label>
                     <input type="submit" name="submit" id="submit" value="Search">
                 </fieldset>
             </form>
+            <form>
+                <fieldset>
+                    <legend>Sample Check Box</legend>
+                    <br>
+                    Sample checkbox 1<input type="checkbox" name="checkbox" id="checkbox" >
+                    <br>
+                    Sample checkbox 2<input type="checkbox" name="checkbox" id="checkbox" >
+                    <br>
+                    Sample checkbox 3<input type="checkbox" name="checkbox" id="checkbox" >
+                </fieldset>
+                <fieldset>
+                    <legend>Radio button</legend>
+                    <br>
+                    <input type="radio" name="radio1" id="radio1" checked> This one is checked
+                    <br>
+                    <input type="radio" name="radio2" id="radio2"> This one is not
+                    <br>
+                    <input type="radio" name="radio3" id="radio3"> helloworld
+
+                </fieldset>
+                <input type="hidden" name="hidden" id="hidden" value="this is hidden">
+                <fieldset>
+                    <legend>This is Select List</legend>
+                    <br>
+                    <select name="select" id="select">
+                        <option>Skills</option>
+                        <option>Education</option>
+                        <option>Coursework</option>
+                        <option>Experience</option>
+                    </select>
+                </fieldset>
+            </form>
+            <fieldset>
+                <legend>This is table example</legend>
+                <table border="2">
+                    <tr>
+                        <th rowspan="3">Rowspan 3</th>
+                        <th colspan="2">Colspan 2</th>
+                      
+                    <tr>
+                        <td>111 111 1111</td>
+                        <td>helloworld</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
         </main>
         <footer>
-            <hr>
-            <p>This is Footer</p>
+            <a href="#"><p>Go to Top</p></a>
         </footer>
+    </div>
     </body>
 </html1>
