@@ -3,6 +3,7 @@
     <head>
         <title>Programming Projects</title>
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
     </head>
 
     <body>
@@ -22,23 +23,49 @@
             <div><h3>This is where programming projects will be displayed</h3></div>
             <form>
                 <fieldset>
-                    <legend>This is searchbar for programming projects</legend>
+                    <legend>This is Select List</legend>
                     <br>
-                    <label>Search Bar: <input type="text" name ="search" id="search"></label>
-                    <input type="submit" name="submit" id="submit" value="Search">
-                </fieldset>
+                    <select name="select" id="select">
+                        <option>checkbox</option>
+                        <option>radio</option>
+                        <option>selectList</option>
+                        <option>tableExample</option>
+                        <option>date</option>
+                        <option>testing</option>
+
+                    </select>
+                    <input type ="button" onclick="fselection()" value=" testing">
+                </fieldset>     
             </form>
             <form>
                 <fieldset>
+                    <legend>This is searchbar for programming projects</legend>
+                    <br>
+                    <label>Search Bar: <input type="text" name ="search" id="search"></label>
+                    <input type ="button" onclick="fsearchBar()" value=" testing">
+                </fieldset>
+            </form>
+            <form>
+                <fieldset id="checkbox">
                     <legend>Sample Check Box</legend>
                     <br>
-                    Sample checkbox 1<input type="checkbox" name="checkbox" id="checkbox" >
+                    <div id="surprisePic"> <img id="surpriseImage" src="image/surprise.jpg" alt="suprise"></div>
+                    Sample checkbox 1<input onclick="fshowPic()"  type="checkbox" name="checkbox" id="checkbox1" >
+                    Sample checkbox 2<input onclick="fshowPic()"  type="checkbox" name="checkbox" id="checkbox2" >
+                    Sample checkbox 3<input onclick="fshowPic()"  type="checkbox" name="checkbox" id="checkbox3" >
                     <br>
-                    Sample checkbox 2<input type="checkbox" name="checkbox" id="checkbox" >
                     <br>
-                    Sample checkbox 3<input type="checkbox" name="checkbox" id="checkbox" >
+                    Sample checkbox 4<input onclick="fshowPic()"  type="checkbox" name="checkbox" id="checkbox4" >
+                    Sample checkbox 5<input onclick="fshowPic()"  type="checkbox" name="checkbox" id="checkbox5" >
+                    Sample checkbox 6<input onclick="fshowPic()"  type="checkbox" name="checkbox" id="checkbox6" >
+                    <br>
+                    <br>
+                    Sample checkbox 7<input onclick="fshowPic()" type="checkbox" name="checkbox" id="checkbox7" >
+                    Sample checkbox 8<input onclick="fshowPic()" type="checkbox" name="checkbox" id="checkbox8" >
+                    Sample checkbox 9<input onclick="fshowPic()" type="checkbox" name="checkbox" id="checkbox9" >
+                    
                 </fieldset>
-                <fieldset>
+                <fieldset id="radio">
                     <legend>Radio button</legend>
                     <br>
                     <input type="radio" name="radio1" id="radio1" checked> This one is checked
@@ -46,23 +73,15 @@
                     <input type="radio" name="radio2" id="radio2"> This one is not
                     <br>
                     <input type="radio" name="radio3" id="radio3"> helloworld
+                    
 
                 </fieldset>
                 <input type="hidden" name="hidden" id="hidden" value="this is hidden">
-                <fieldset>
-                    <legend>This is Select List</legend>
-                    <br>
-                    <select name="select" id="select">
-                        <option>Skills</option>
-                        <option>Education</option>
-                        <option>Coursework</option>
-                        <option>Experience</option>
-                    </select>
-                </fieldset>
             </form>
-            <fieldset>
+            <fieldset id="tableExample">
                 <legend>This is table example</legend>
-                <table border="2">
+                <h2 id="stop"></h2>
+                <table id="table"  border="2">
                     <tr>
                         <th rowspan="3">Rowspan 3</th>
                         <th colspan="2">Colspan 2</th>
@@ -76,7 +95,32 @@
                         <td>2</td>
                     </tr>
                 </table>
+                <input type="button" onclick="move()" value="Move">
+
             </fieldset>
+            <fieldset id="factorial">
+                <legend>Factorial calculator</legend>
+                <br>
+                <input type="text" id="factorialInput">
+                <input type="button" onclick="factorial()" value="Calculate Factorial">
+                <p id="factorialAns"></p>
+
+            </fieldset>
+
+            <fieldset id="date">
+                <legend>Today's date</legend>
+                <br>
+                <input type="button" id="dateButton" value="Show Date" onclick="fshowDate()">
+                <br>
+                <p id="showDate"></p>
+
+            </fieldset>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <fieldset>
+                <legend>this is test</legend>
+                <p id="testing">hello this is test</p>
+            </fieldset>
+
 
 
         </main>

@@ -119,3 +119,9 @@ th, td{
     margin: 50px;
     padding: 20px;
 }
+#surpriseImage{
+    width: 110px ;
+    height: 110px;
+    float: right;
+    display: none;
+}
